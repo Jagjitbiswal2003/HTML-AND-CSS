@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>size units</title>
+    <style>
+          html{
+            font-size: 25px;
+          }
+          .container{
+            font-size: 10px;
+            width: 100vw;
+            height: 100vh;
+            /* if you want to set your width in your whole one page then you use 100vw */
+            /*  if you want to set your height in your whole one page then you use 100vh */
+            border:2px solid black ;
+          }
+             #first{
+                font-size: 3em;
+                padding: 3em;
+             }
+             #second {
+              font-size: 3rem;
+              padding: 3rem;
+              /* for rem you have to declare html font size */
+              /* rem is used when your font size depends on the parent(html)*/
+             }
+        
+             h1{
+            text-align:center;
+
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="first">this is a website</h1>
+    <h1 id="second">this is a website</h1>
+  </div>
+</body>
+</html>

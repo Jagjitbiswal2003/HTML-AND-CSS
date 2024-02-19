@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout create using grid template</title>
+    <style>
+       .container{
+            display: grid; grid-gap:1rem;
+            grid-template-areas:   
+          'navbar navbar navbar navbar'
+          'section section section aside';
+
+       }
+       .item{
+        background-color: blueviolet;
+        border: 3px solid black;
+
+       }
+        #navbar{
+              grid-area: navbar;
+        }
+         #section{
+            grid-area:section;
+         }
+         #aside{
+            grid-area: aside;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar"class="item">
+            home phone add contact
+        </div>
+        <div id="section"class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsum quis, sunt ipsam, quibusdam minima, a commodi aliquid voluptatem incidunt necessitatibus magnam! Laboriosam ut distinctio sit quas magnam nemo! Adipisci eum nam consectetur fugiat, ratione exercitationem. Libero vitae explicabo dolorem quis vero eos repellendus nihil quod maxime rem delectus, placeat quo. Rerum ratione illo quod recusandae iusto. Ipsum, mollitia quos ipsam voluptas nihil veritatis. Neque, consectetur sequi optio labore suscipit nostrum, ducimus earum laudantium officiis dignissimos tempore corrupti iusto odio. Labore, eum deserunt expedita modi magnam maxime facilis, sunt dolor quaerat quis, aspernatur inventore. Assumenda aliquid sapiente distinctio quo id.</p>
+        </div>
+        <div id="aside"class="item">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, fuga rerum voluptatum eligendi aperiam eum quibusdam, accusantium nesciunt earum aut cum quisquam corporis odit debitis numquam doloremque autem. Sapiente alias quam nisi aliquid assumenda asperiores eaque ullam quo temporibus deserunt maiores architecto doloremque sed, laudantium itaque nam nihil illo earum dolor numquam repellendus reprehenderit. Quaerat distinctio sed nihil veritatis molestiae cupiditate aut, error inventore dignissimos architecto reiciendis, molestias maxime? Doloremque labore omnis culpa voluptatum corrupti minima, ab neque ratione fugiat architecto similique, ea amet in, officia accusantium totam veritatis adipisci minus. Ab aliquid voluptate nostrum praesentium laborum deleniti temporibus culpa.</p>
+        </div>
+           <footer class="item"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, fugit!</p></footer>
+        <!-- <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid and creating rows and gaps</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid property */
+            grid-template-columns: 300px 100px 100px;
+            border: 2px solid red;
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-template-columns: repeat(3,auto);
+            grid-gap:2rem;
+
+        }
+           .item{
+            /* height: 100px; */
+            /* width: 100px; */
+            background-color: blue;
+            margin: 3px;
+            border: 2px solid blueviolet;
+            padding:10px;
+        }
+        
+    </style>
+</head>
+<body>
+      <div class="container">
+        <div class="item">this is item 1</div>
+        <div class="item">this is item 2</div>
+        <div class="item">this is item 3</div>
+        <div class="item">this is item 4</div>
+      </div>
+</body>
+</html>
